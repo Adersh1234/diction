@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/diction-landing-page",
+  basePath: "/diction",
 };
 
 export default nextConfig;

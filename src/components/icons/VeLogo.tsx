@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function VeLogo({
   className = "h-8",
   variant = "blue",
@@ -7,22 +5,20 @@ export function VeLogo({
   className?: string;
   variant?: "blue" | "dark" | "white";
 }) {
-  // The logo is natively blue — use CSS filter for dark/white variants
-  const filterClass =
+  const filterStyle =
     variant === "dark"
-      ? "brightness-0"
+      ? { filter: "brightness(0)" }
       : variant === "white"
-        ? "brightness-0 invert"
-        : "";
+        ? { filter: "brightness(0) invert(1)" }
+        : {};
 
   return (
-    <Image
-      src="/ve-logo.png"
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="https://us.images.ve.ai/public/dashboard/image.png"
       alt="Ve"
-      width={120}
-      height={120}
-      className={`${className} w-auto object-contain ${filterClass}`}
-      priority
+      className={`${className} w-auto object-contain`}
+      style={filterStyle}
     />
   );
 }
