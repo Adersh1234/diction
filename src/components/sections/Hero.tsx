@@ -17,7 +17,7 @@ export function Hero() {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="relative bg-chartreuse text-dark overflow-hidden px-5 pt-28 pb-20 md:pt-36 md:pb-28 lg:pt-40 lg:pb-32"
+      className="relative bg-chartreuse text-dark overflow-hidden px-5 min-h-dvh flex flex-col items-center justify-center"
     >
       {/* Floating app icons — decorative */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
