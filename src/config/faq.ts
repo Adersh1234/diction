@@ -7,7 +7,7 @@ export const faqItems = [
   {
     question: "Which platforms are supported?",
     answer:
-      "Mac and Windows. Works in every app — no per-app setup needed. If you can type in it, Ve works in it.",
+      "Mac and Windows. Works in every app,no per-app setup needed. If you can type in it, Ve works in it.",
   },
   {
     question: "What languages does Ve support?",
@@ -17,7 +17,7 @@ export const faqItems = [
   {
     question: "Is it really free?",
     answer:
-      "Yes. Ve is free forever — not a trial, not freemium. No credit card required. Just install and start speaking.",
+      "Yes. Ve is free forever,not a trial, not freemium. No credit card required. Just install and start speaking.",
   },
   {
     question: "How accurate is the transcription?",

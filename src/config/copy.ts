@@ -5,7 +5,7 @@ export const copy = {
     h1Line2: "than you type.",
     h1Accent: "Ve fixes that.",
     subhead:
-      "Speak and Ve types — in any app, any window, instantly. Email, Slack, Docs, Notion. Wherever your cursor is.",
+      "Speak and Ve types,in any app, any window, instantly. Email, Slack, Docs, Notion. Wherever your cursor is.",
     cta: "Get Ve Free",
     ctaLink: "#download",
     trustChips: ["No credit card", "2-minute install", "Free forever"],
@@ -14,7 +14,7 @@ export const copy = {
   problem: {
     eyebrow: "The problem",
     h2: "Typing is the bottleneck. Your thoughts aren't.",
-    body: "Every idea you slow down to type is a thought you almost lost. Ve removes the gap between thinking and writing — in every app, without switching context.",
+    body: "Every idea you slow down to type is a thought you almost lost. Ve removes the gap between thinking and writing,in every app, without switching context.",
     slowText: "I need to schedule a meeting with the team for next Tuesday...",
     fastText:
       "I need to schedule a meeting with the team for next Tuesday to review the Q3 roadmap and align on deliverables.",
@@ -23,7 +23,7 @@ export const copy = {
     eyebrow: "What you get",
     h2: "Works in every app you already use.",
     body: "No copy-pasting. No switching windows. Hit a shortcut, speak, done.",
-    accent: "Free forever — not a trial, not freemium.",
+    accent: "Free forever,not a trial, not freemium.",
   },
   howItWorks: {
     eyebrow: "How it works",
@@ -37,7 +37,7 @@ export const copy = {
       {
         number: 2,
         title: "Hit the shortcut",
-        body: "Anywhere you're typing — any app, any window.",
+        body: "Anywhere you're typing,any app, any window.",
       },
       {
         number: 3,

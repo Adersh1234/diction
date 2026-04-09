@@ -35,13 +35,10 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Center content */}
       <div className="relative mx-auto max-w-4xl text-center">
-        <FadeInView y={-8}>
-          <Badge>{copy.hero.badge}</Badge>
-        </FadeInView>
-
         <FadeInView delay={0.1}>
-          <h1 id="hero-heading" className="text-hero mt-8">
+          <h1 id="hero-heading" className="text-hero">
             {copy.hero.h1Line1}
             <br />
             {copy.hero.h1Line2}
@@ -59,43 +56,27 @@ export function Hero() {
         </FadeInView>
 
         <FadeInView delay={0.5}>
-          <div className="mt-8 flex flex-col items-center gap-4">
+          <div className="mt-8">
             <Button variant="primary" href={copy.hero.ctaLink}>
               {copy.hero.cta}
             </Button>
-            <ChipRow items={copy.hero.trustChips} variant="dark" />
           </div>
         </FadeInView>
+      </div>
 
-        <FadeInView delay={0.6}>
-          <p className="mt-6 flex items-center justify-center gap-2 text-sm text-dark/60">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              aria-hidden="true"
-            >
-              <rect
-                x="3"
-                y="6"
-                width="8"
-                height="6"
-                rx="1"
-                stroke="currentColor"
-                strokeWidth="1.2"
-              />
-              <path
-                d="M5 6V4.5a2 2 0 114 0V6"
-                stroke="currentColor"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-              />
+      {/* Bottom — trust chips + privacy line pinned to bottom */}
+      <FadeInView delay={0.6}>
+        <div className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-2">
+          <ChipRow items={copy.hero.trustChips} variant="dark" />
+          <p className="flex items-center justify-center gap-2 text-sm text-dark/60">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <rect x="3" y="6" width="8" height="6" rx="1" stroke="currentColor" strokeWidth="1.2" />
+              <path d="M5 6V4.5a2 2 0 114 0V6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
             </svg>
             {copy.hero.privacyLine}
           </p>
-        </FadeInView>
-      </div>
+        </div>
+      </FadeInView>
     </section>
   );
 }

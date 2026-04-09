@@ -14,7 +14,7 @@ export function FinalCTA() {
     >
       <div className="mx-auto max-w-3xl text-center">
         <FadeInView>
-          <h2 id="download-heading" className="text-h2">
+          <h2 id="download-heading" className="text-h2 text-cyan">
             {copy.finalCta.h2}
           </h2>
         </FadeInView>
@@ -27,9 +27,10 @@ export function FinalCTA() {
 
         <FadeInView delay={0.2}>
           <div className="mt-8 flex flex-col items-center gap-4">
-            <Button variant="primary" href={copy.finalCta.ctaLink}>
+            <a href={copy.finalCta.ctaLink} className="group inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-semibold text-base text-dark transition-all duration-300 cursor-pointer select-none hover:bg-white/90 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]">
               {copy.finalCta.cta}
-            </Button>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-1 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
             <ChipRow items={copy.finalCta.trustChips} variant="dark" />
           </div>
         </FadeInView>

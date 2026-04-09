@@ -2,9 +2,9 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { ProblemAgitation } from "@/components/sections/ProblemAgitation";
 import { AppGrid } from "@/components/sections/AppGrid";
+import { FeatureShowcase } from "@/components/sections/FeatureShowcase";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Privacy } from "@/components/sections/Privacy";
-import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 
@@ -22,12 +22,14 @@ export default function Home() {
         <Hero />
         <ProblemAgitation />
         <AppGrid />
+        <FeatureShowcase />
         <HowItWorks />
         <Privacy />
-        <FAQ />
         <FinalCTA />
       </main>
-      <Footer />
+      <div className="bg-chartreuse">
+        <Footer />
+      </div>
     </>
   );
 }

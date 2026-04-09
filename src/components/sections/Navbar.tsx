@@ -10,36 +10,36 @@ export function Navbar() {
       aria-label="Main navigation"
     >
       <a href="/" aria-label="Ve home">
-        <VeLogo className="h-7" variant="dark" />
+        <VeLogo className="h-10" variant="blue" />
       </a>
       <div className="flex items-center gap-6">
         <a
           href="#why"
-          className="hidden md:inline text-sm font-medium text-dark/70 hover:text-dark transition-colors"
+          className="hidden md:inline text-sm font-medium text-cyan hover:text-cyan/80 transition-colors"
         >
           Why
         </a>
         <a
           href="#how-it-works"
-          className="hidden md:inline text-sm font-medium text-dark/70 hover:text-dark transition-colors"
+          className="hidden md:inline text-sm font-medium text-cyan hover:text-cyan/80 transition-colors"
         >
           How it works
         </a>
         <a
           href="#privacy"
-          className="hidden md:inline text-sm font-medium text-dark/70 hover:text-dark transition-colors"
+          className="hidden md:inline text-sm font-medium text-cyan hover:text-cyan/80 transition-colors"
         >
           Privacy
         </a>
         <a
           href="#faq"
-          className="hidden md:inline text-sm font-medium text-dark/70 hover:text-dark transition-colors"
+          className="hidden md:inline text-sm font-medium text-cyan hover:text-cyan/80 transition-colors"
         >
           FAQ
         </a>
         <a
           href={copy.hero.ctaLink}
-          className="inline-flex items-center rounded-full bg-dark px-5 py-2 text-sm font-semibold text-chartreuse transition-all hover:bg-[#1a2a2a] hover:scale-[1.02] active:scale-[0.98]"
+          className="inline-flex items-center rounded-full bg-cyan px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-cyan/90 hover:scale-[1.02] active:scale-[0.98]"
         >
           {copy.hero.cta}
         </a>
